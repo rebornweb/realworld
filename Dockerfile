@@ -8,9 +8,6 @@ COPY . .
 EXPOSE 3000 80 8000
 
 #Install Dependencies
-#RUN apt update -y && apt install -y git && apt install -y python3.8-venv python3-pip
-
-#Download
 RUN mkdir /home/app && cd /home/app && \
     git clone https://github.com/danjac/realworld/ && cd realworld 
 
